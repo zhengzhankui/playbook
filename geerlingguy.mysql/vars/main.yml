@@ -1,0 +1,10 @@
+mysql_root_password: zk822418
+mysql_databases: 
+  - name: ansible_test
+    enconding: latin1
+    collation: latin1_general_ci
+mysql_users:
+  - name: ansible
+    host: "%"
+    password: ansible
+    priv: "ansible.*:ALL"
